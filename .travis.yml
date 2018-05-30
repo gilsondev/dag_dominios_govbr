@@ -9,7 +9,6 @@ services:
 
 env:
     global:
-        DATABASE_URL=postgresql://opendata:opendata@localhost/opendatabr_test
         CODECLIMATE_REPO_TOKEN=b83418e7c1f281c9d2b868d6d9691427179ff485a0372f3d4c250476c7642689
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
