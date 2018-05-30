@@ -7,10 +7,16 @@ python:
 services:
     - postgresql
 
+env:
+    global:
+        CODECLIMATE_REPO_TOKEN=b83418e7c1f281c9d2b868d6d9691427179ff485a0372f3d4c250476c7642689
+
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
     - pip install -r requirements_dev.txt
-    - pip install -U tox-travis
+    - pip install -U tox-travis codeclimate-test-reporter
+    - pip uninstall coverage
+    - pip install coverage==4.0.0
 
 before_script:
     - psql -c "CREATE DATABASE opendatabr_test;" -U postgres
@@ -21,8 +27,5 @@ script:
     - tox
     - coverage run -m pytest
     - coverage report -m
-
-after_success:
-    - coveralls
-
+    - codeclimate-test-reporter --file .coverage
 
