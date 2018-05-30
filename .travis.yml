@@ -15,7 +15,7 @@ env:
 install:
     - pip install -r requirements_dev.txt
     - pip install -U tox-travis codeclimate-test-reporter
-    - pip uninstall coverage
+    - pip uninstall -y coverage
     - pip install coverage==4.0.0
 
 before_script:
