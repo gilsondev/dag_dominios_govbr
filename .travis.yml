@@ -7,17 +7,22 @@ python:
 services:
     - postgresql
 
-env:
-    - DATABASE_URL="postgresql://opendata:opendata@localhost/opendatabr_test"
-
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
+install:
+    - pip install -r requirements_dev.txt
+    - pip install -U tox-travis
 
 before_script:
     - psql -c "CREATE DATABASE opendatabr_test;" -U postgres
     - psql -c "CREATE USER opendata WITH PASSWORD 'opendata';" -U postgres
 
 # Command to run tests, e.g. python setup.py test
-script: tox passenv=DATABASE_URL
+script:
+    - tox
+    - coverage run -m pytest
+    - coverage report -m
+
+after_success:
+    - coveralls
 
 
