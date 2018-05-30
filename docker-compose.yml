@@ -1,0 +1,19 @@
+version: '3'
+services:
+    opendatabr:
+        image: postgres:9.5
+        environment:
+            - POSTGRES_DB=opendatabr
+            - POSTGRES_USER=opendata
+            - POSTGRES_PASSWORD=opendata
+        ports:
+            - "5432:5432"
+    opendatabr_test:
+        image: postgres:9.5
+        environment:
+            - POSTGRES_DB=opendatabr_test
+            - POSTGRES_USER=opendata
+            - POSTGRES_PASSWORD=opendata
+        ports:
+            - "5434:5432"
+

@@ -1,13 +1,11 @@
-Contributing
-============
+# Contributing
 
 Contributions are welcome, and they are greatly appreciated! Every
 little bit helps, and credit will always be given.
 
 You can contribute in many ways:
 
-Types of Contributions
-----------------------
+## Types of Contributions
 
 ### Report Bugs
 
@@ -15,10 +13,10 @@ Report bugs at <https://github.com/gilsondev/dag_dominios_govbr/issues>.
 
 If you are reporting a bug, please include:
 
--   Your operating system name and version.
--   Any details about your local setup that might be helpful in
+*   Your operating system name and version.
+*   Any details about your local setup that might be helpful in
     troubleshooting.
--   Detailed steps to reproduce the bug.
+*   Detailed steps to reproduce the bug.
 
 ### Fix Bugs
 
@@ -44,19 +42,18 @@ The best way to send feedback is to file an issue at
 
 If you are proposing a feature:
 
--   Explain in detail how it would work.
--   Keep the scope as narrow as possible, to make it easier to
+*   Explain in detail how it would work.
+*   Keep the scope as narrow as possible, to make it easier to
     implement.
--   Remember that this is a volunteer-driven project, and that
+*   Remember that this is a volunteer-driven project, and that
     contributions are welcome :)
 
-Get Started!
-------------
+## Get Started!
 
-Ready to contribute? Here's how to set up dag\_dominios\_govbr for local
+Ready to contribute? Here's how to set up dag_dominios_govbr for local
 development.
 
-1.  Fork the dag\_dominios\_govbr repo on GitHub.
+1.  Fork the dag_dominios_govbr repo on GitHub.
 2.  Clone your fork locally:
 
         $ git clone git@github.com:your_name_here/dag_dominios_govbr.git
@@ -92,8 +89,7 @@ development.
 
 7.  Submit a pull request through the GitHub website.
 
-Pull Request Guidelines
------------------------
+## Pull Request Guidelines
 
 Before you submit a pull request, check that it meets these guidelines:
 
@@ -106,18 +102,16 @@ Before you submit a pull request, check that it meets these guidelines:
     <https://travis-ci.org/gilsondev/dag_dominios_govbr/pull_requests>
     and make sure that the tests pass for all supported Python versions.
 
-Tips
-----
+## Tips
 
 To run a subset of tests:
 
-\$ py.test tests.test\_dag\_dominios\_govbr
+\$ py.test tests.test_dag_dominios_govbr
 
-Deploying
----------
+## Deploying
 
 A reminder for the maintainers on how to deploy. Make sure all your
-changes are committed (including an entry in HISTORY.rst). Then run:
+changes are committed (including an entry in CHANGELOG.rst). Then run:
 
 \$ bumpversion patch \# possible: major / minor / patch \$ git push \$
 git push --tags

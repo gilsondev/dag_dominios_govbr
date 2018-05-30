@@ -3,12 +3,16 @@
 language: python
 python:
   - 3.6
-  - 3.5
-  - 3.4
-  - 2.7
+
+services:
+    - postgresql
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
+
+before_script:
+    - psql -c "CREATE DATABASE opendatabr_test"; -U postgres
+    - psql -c "CREATE USER opendata WITH PASSWORD 'opendata'"; -U postgres
 
 # Command to run tests, e.g. python setup.py test
 script: tox

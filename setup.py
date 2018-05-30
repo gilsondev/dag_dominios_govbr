@@ -40,11 +40,14 @@ class PostInstallCommand(install):
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.md') as history_file:
-    history = history_file.read()
+with open('CHANGELOG.md') as CHANGELOG_file:
+    CHANGELOG = CHANGELOG_file.read()
 
 requirements = [
-    'requests'
+    'requests',
+    'SQLAlchemy==1.2.8',
+    'psycopg2-binary==2.7.4',
+    'rows==0.3.1',
 ]
 
 setup_requirements = ['pytest-runner', ]
@@ -72,7 +75,7 @@ setup(
     description="Projeto criado para importar dados dos dominios gov.br autorizados pelo Min. do Planejamento",
     install_requires=requirements,
     license="GNU General Public License v3",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n' + CHANGELOG,
     include_package_data=True,
     keywords='dag_dominios_govbr',
     name='dag_dominios_govbr',

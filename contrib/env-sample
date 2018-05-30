@@ -1,1 +1,2 @@
 export AIRFLOW_HOME=$PWD/airflow
+export DATABASE_URL=postgresql://opendata:opendata@localhost:5434/opendatabr_test

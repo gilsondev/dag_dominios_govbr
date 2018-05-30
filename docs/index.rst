@@ -11,7 +11,7 @@ Welcome to Dominios gov.br's documentation!
    modules
    contributing
    authors
-   history
+   CHANGELOG
 
 Indices and tables
 ==================

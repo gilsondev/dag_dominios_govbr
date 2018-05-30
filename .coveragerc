@@ -1,0 +1,6 @@
+[run]
+source: dag_dominios_govbr
+omit =
+    # DAG file
+    */dag_dominios_govbr.py
+    .tox/*
