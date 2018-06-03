@@ -54,7 +54,7 @@ setup_airflow: ## Configure airflow home and initialize your local db
 	AIRFLOW_HOME=$$PWD/airflow airflow initdb
 	mkdir -p $$PWD/airflow/dags
 
-run_airflow:
+run_airflow: ## Run airflow development webserver
 	AIRFLOW_HOME=$$PWD/airflow airflow webserver
 
 install: clean ## install the package to the active Python's site-packages
