@@ -52,4 +52,4 @@ $ tox
 
 ## Créditos
 
-This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+Esse pacote foi criado com [Cookiecutter](https://github.com/audreyr/cookiecutter) e com o template de projetos [gilsondev/cookiecutter-airflow](https://github.com/gilsondev/cookiecutter-airflow)
