@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/gilsondev/dag_dominios_govbr.svg?branch=master)](https://travis-ci.org/gilsondev/dag_dominios_govbr)
 [![Maintainability](https://api.codeclimate.com/v1/badges/952d6fde9f29ff243ba6/maintainability)](https://codeclimate.com/github/gilsondev/dag_dominios_govbr/maintainability)
+[![Updates](https://pyup.io/repos/github/gilsondev/dag_dominios_govbr/shield.svg)](https://pyup.io/repos/github/gilsondev/dag_dominios_govbr/)
+[![Python 3](https://pyup.io/repos/github/gilsondev/dag_dominios_govbr/python-3-shield.svg)](https://pyup.io/repos/github/gilsondev/dag_dominios_govbr/)
 
 Projeto criado para importar dados dos dominios gov.br autorizados pelo
 Min. do Planejamento
