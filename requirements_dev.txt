@@ -16,4 +16,4 @@ ipython==6.4.0
 apache-airflow==1.9.0
 SQLAlchemy==1.2.8
 rows==0.3.1
-psycopg2-binary==2.7.4
+psycopg2-binary==2.9.4
